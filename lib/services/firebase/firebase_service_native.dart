@@ -14,14 +14,17 @@ class NativeFirebaseService extends FirebaseService {
 
   @override
   Future<void> init() async {
-    await Firebase.initializeApp().catchError((Object e) {
+    await Firebase.initializeApp(
+            // options: DefaultFirebaseOptions.currentPlatform,
+            )
+        .catchError((Object e) {
       print("$e");
     });
     if (kIsWeb) {
       await auth.setPersistence(Persistence.LOCAL);
     }
     print("InitComplete");
-    FirebaseAuth.instance.userChanges().listen((User? user) {
+    auth.userChanges().listen((User? user) {
       _isSignedIn = user != null;
     });
   }

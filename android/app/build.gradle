@@ -44,7 +44,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.gskinner.flutterfolio"
+        applicationId "com.remottely.flutterfolio"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
