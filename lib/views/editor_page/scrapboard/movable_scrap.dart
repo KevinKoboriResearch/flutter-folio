@@ -56,7 +56,9 @@ class MovableScrapState extends State<MovableScrap> {
   @override
   Widget build(BuildContext context) {
     double btnSize = Insets.xl;
-    return ListenableBuilder(
+    // TODO(kevin): fix this
+    // ListenableBuilder
+    return CustomListenableBuilder(
       listenable: widget.data, // rebuild whenever our data changes
       builder: (BuildContext context, Widget? child) {
         // Position Content

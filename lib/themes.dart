@@ -89,14 +89,16 @@ class AppTheme {
     );
     // Apply additional styling that is missed by ColorScheme
     t.copyWith(
-        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        textSelectionTheme: TextSelectionThemeData(
-          cursorColor: surface1,
-          selectionHandleColor: Colors.transparent,
-          selectionColor: surface1,
-        ),
-        highlightColor: shift(accent1, .1),
-        toggleableActiveColor: accent1);
+      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      textSelectionTheme: TextSelectionThemeData(
+        cursorColor: surface1,
+        selectionHandleColor: Colors.transparent,
+        selectionColor: surface1,
+      ),
+      highlightColor: shift(accent1, .1),
+      // TODO(kevin): Fix this
+      // toggleableActiveColor: accent1,
+    );
     // All done, return the ThemeData
     return t;
   }

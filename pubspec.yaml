@@ -13,9 +13,11 @@ dependencies:
   anchored_popups: ^0.1.0
   animate_do: ^2.0.0
   auto_size_text:
-    git:
-      url: git://github.com/gskinnerTeam/auto_size_text.git
-      ref: 8800276218b053265ffc796a24e84820bebaaeac
+    path: packages/auto_size_text
+    # git:
+    #   url: git://github.com/gskinnerTeam/auto_size_text.git
+    #   ref: 8800276218b053265ffc796a24e84820bebaaeac
+  # auto_size_text: ^3.0.0
   bitsdojo_window: ^0.1.0+1
   cached_network_image: ^3.0.0
   cloudinary_public: ^0.8.0
@@ -71,6 +73,10 @@ dev_dependencies:
   json_serializable:
   flutter_launcher_icons: ^0.9.0
   msix: ^2.8.13
+
+dependency_overrides:
+  analyzer: '>=1.0.0 <2.0.0' # If you have a specific conflict with analyzer
+  test_api: '>=0.2.19 <0.8.0' # Ensure compatibility with flutter_driver
 
 msix_config:
   display_name: Flutter Folio
