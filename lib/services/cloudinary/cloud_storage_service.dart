@@ -1,13 +1,25 @@
+import 'dart:io';
+import 'dart:typed_data';
+
 import 'package:cloudinary_public/cloudinary_public.dart';
 import 'package:flutter_folio/_utils/string_utils.dart';
 import 'package:flutter_folio/app_keys.dart';
 import 'package:flutter_folio/commands/pick_images_command.dart';
+import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
 class CloudStorageService {
   late CloudinaryPublic _cloudinary;
 
   void init() {
     _cloudinary = CloudinaryPublic(AppKeys.cloudinaryCloud, AppKeys.cloudinaryPreset, cache: false);
+  }
+
+  Future<ByteData> getByteDataFromAsset(AssetEntity asset) async {
+    final File? file = await asset.originFile;
+    if (file == null) throw Exception("Failed to get file from asset.");
+
+    final Uint8List bytes = await file.readAsBytes();
+    return ByteData.view(bytes.buffer);
   }
 
   // The response would have any errors, but List<AppImage> would be created here.
@@ -23,8 +35,8 @@ class CloudStorageService {
     // Handle images as "asset" files ios/android
     else if (images.first.asset != null) {
       print("Uploade from future bytes... ");
-      futures = images.map((image) {
-        return CloudinaryFile.fromFutureByteData(image.asset!.getByteData(), identifier: image.asset!.identifier);
+      futures = images.map((image) async {
+        return CloudinaryFile.fromFutureByteData(getByteDataFromAsset(image.asset!), identifier: image.asset!.id);
       }).toList();
     }
     return await _cloudinary.multiUpload(futures);

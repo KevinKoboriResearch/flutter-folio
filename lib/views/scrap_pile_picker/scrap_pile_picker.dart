@@ -79,7 +79,7 @@ class ScrapPilePickerState extends State<ScrapPilePicker> with RawKeyboardListen
   }
 
   void _handlePickImagesPressed([bool enableCamera = true]) async {
-    List<PickedImage> images = await PickImagesCommand().run(allowMultiple: true, enableCamera: enableCamera);
+    List<PickedImage> images = await PickImagesCommand(context).run(allowMultiple: true, enableCamera: enableCamera);
     UploadImageScrapsCommand().run(widget.bookId, images);
   }
 

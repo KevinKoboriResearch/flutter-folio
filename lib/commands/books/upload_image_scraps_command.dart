@@ -50,8 +50,9 @@ class UploadImageScrapsCommand extends BaseAppCommand {
         if (pickedImage.path != null && (pickedImage.path?.contains("http") ?? false) == false) {
           final size = image_size.ImageSizeGetter.getSize(FileInput(File(pickedImage.path!)));
           aspect = size.width / size.height;
-        } else if (pickedImage.asset != null && pickedImage.asset!.originalWidth != null) {
-          aspect = pickedImage.asset!.originalWidth! / pickedImage.asset!.originalHeight!;
+          // TODO(kevin): remove this != null
+        } else if (pickedImage.asset != null && pickedImage.asset!.orientatedWidth != null) {
+          aspect = pickedImage.asset!.orientatedWidth / pickedImage.asset!.orientatedHeight;
         }
       }
       // Prefer the https url if we have one

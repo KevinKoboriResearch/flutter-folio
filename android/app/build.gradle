@@ -45,7 +45,7 @@ android {
 
     defaultConfig {
         applicationId "com.gskinner.flutterfolio"
-        minSdkVersion 19
+        minSdkVersion flutter.minSdkVersion
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

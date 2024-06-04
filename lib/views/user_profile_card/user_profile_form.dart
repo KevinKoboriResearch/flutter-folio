@@ -110,7 +110,7 @@ class _UserProfileFormState extends State<UserProfileForm> {
   }
 
   void _handleProfileImgPressed() async {
-    List<PickedImage> paths = await PickImagesCommand().run();
+    List<PickedImage> paths = await PickImagesCommand(context).run();
     CloudStorageService cloudStorage = context.read<CloudStorageService>();
     List<CloudinaryResponse> uploads = await cloudStorage.multiUpload(images: paths);
 

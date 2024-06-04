@@ -4,8 +4,11 @@
 
 list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_windows
+  cloud_firestore
   desktop_window
   file_selector_windows
+  firebase_auth
+  firebase_core
   url_launcher_windows
 )
 

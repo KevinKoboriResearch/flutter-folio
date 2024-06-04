@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="Create and share beautiful Scrapbooks using Photos, Text and Stickers!"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Flutter Folio - Built by gskinner"
+    />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <link rel="icon" type="image/png" href="favicon.ico" />
+
+    <title>Flutter Folio</title>
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("flutter-first-frame", function () {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+      // Disable right-click. It doesn't work with Flutter, and we have our own internal context menu.
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDIMnzUz9TshIyRSSl7iUpp5QxPhAcL1ZQ",
+        authDomain: "flutter-folio-demo.firebaseapp.com",
+        projectId: "flutter-folio-demo",
+        storageBucket: "flutter-folio-demo.appspot.com",
+        messagingSenderId: "150221469863",
+        appId: "1:150221469863:web:dabe0703fe4146e9d6c382",
+        measurementId: "G-SRQ9Z7BE42",
+      };
+
+      // Workaround for Firebase issues on Web: https://github.com/FirebaseExtended/flutterfire/issues/3409
+      if (!firebase.analytics || !navigator.cookieEnabled) {
+        firebase.analytics = function () {};
+      }
+      // End-Workaround
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html> -->
