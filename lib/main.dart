@@ -15,6 +15,7 @@ import 'package:flutter_folio/themes.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   // Call a method to setup a global error handler so we can log all errors, including ones from native extensions.
   initLogger(() async {
     // Status bar style on Android/iOS

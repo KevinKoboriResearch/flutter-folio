@@ -48,3 +48,7 @@ This application is released under the [MIT license](LICENSE.md). You can use th
 
 [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+### TODO
+
+Create an account and config project cloudinary api:
+https://cloudinary.com/
