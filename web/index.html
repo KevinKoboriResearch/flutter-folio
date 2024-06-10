@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+  <head>
+    <base href="/" />
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="Create and share beautiful Scrapbooks using Photos, Text and Stickers!"
+    />
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Flutter Folio - Built by gskinner"
+    />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+    <link rel="icon" type="image/png" href="favicon.ico" />
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+    <title>Flutter Folio</title>
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("flutter-first-frame", function () {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+      // Disable right-click. It doesn't work with Flutter, and we have our own internal context menu.
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_folio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <!-- Atualize para as versões mais recentes do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAXR7wbxYEa8kMEV1wCMAKnVQFEdtimhzY",
+        authDomain: "flutter-folio-demo-2.firebaseapp.com",
+        projectId: "flutter-folio-demo-2",
+        storageBucket: "flutter-folio-demo-2.appspot.com",
+        messagingSenderId: "182050925919",
+        appId: "1:182050925919:web:1e285c4b90d1340a0e9aea",
+        measurementId: "G-2VKBP832Y6",
+      };
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
 
-  <title>flutter_folio</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
+      // Workaround for Firebase issues on Web
+      if (!firebase.analytics || !navigator.cookieEnabled) {
+        firebase.analytics = function () {};
+      }
+    </script>
+
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
 </html>

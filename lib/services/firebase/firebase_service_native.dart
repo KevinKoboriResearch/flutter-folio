@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_folio/_utils/logger.dart';
 import 'package:flutter_folio/data/app_user.dart';
+import 'package:flutter_folio/firebase_options.dart';
 import 'package:flutter_folio/services/firebase/firebase_service.dart';
 
 class NativeFirebaseService extends FirebaseService {
@@ -15,7 +16,7 @@ class NativeFirebaseService extends FirebaseService {
   @override
   Future<void> init() async {
     await Firebase.initializeApp(
-            // options: DefaultFirebaseOptions.currentPlatform,
+            options: DefaultFirebaseOptions.currentPlatform,
             )
         .catchError((Object e) {
       print("$e");
