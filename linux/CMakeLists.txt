@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
 set(BINARY_NAME "flutter_folio")
-set(APPLICATION_ID "com.gskinner.flutter_folio")
+set(APPLICATION_ID "com.remottely.flutter_folio")
 
 cmake_policy(SET CMP0063 NEW)
 

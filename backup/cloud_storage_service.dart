@@ -60,5 +60,5 @@
 //   }
 // }
 
-// //https://res.cloudinary.com/gskinner/image/upload/w_600,h_600,c_fit/v1613885251/IMG_1697_1_vtbkrp.jpg
-// //https://res.cloudinary.com/gskinner/image/upload/v1613885251/IMG_1697_1_vtbkrp.jpg
+// //https://res.cloudinary.com/remottely/image/upload/w_600,h_600,c_fit/v1613885251/IMG_1697_1_vtbkrp.jpg
+// //https://res.cloudinary.com/remottely/image/upload/v1613885251/IMG_1697_1_vtbkrp.jpg

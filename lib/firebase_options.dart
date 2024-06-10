@@ -60,29 +60,30 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDb8J5nA47PZ6LQBx8QIHVOB75A5bXO5Mw',
-    appId: '1:182050925919:ios:0bed66410ab4b9c00e9aea',
+    appId: '1:182050925919:ios:d6492cb33ab560680e9aea',
     messagingSenderId: '182050925919',
     projectId: 'flutter-folio-demo-2',
     storageBucket: 'flutter-folio-demo-2.appspot.com',
-    iosBundleId: 'com.gskinner.flutterFolio',
+    iosBundleId: 'com.remottely.flutterfolio',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyDb8J5nA47PZ6LQBx8QIHVOB75A5bXO5Mw',
-    appId: '1:182050925919:ios:ead62e56ba01d4a40e9aea',
+    appId: '1:182050925919:ios:c0e72881a39825280e9aea',
     messagingSenderId: '182050925919',
     projectId: 'flutter-folio-demo-2',
     storageBucket: 'flutter-folio-demo-2.appspot.com',
-    iosBundleId: 'com.gskinner.travelApp',
+    iosBundleId: 'com.remottely.travelApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyAXR7wbxYEa8kMEV1wCMAKnVQFEdtimhzY',
-    appId: '1:182050925919:web:18fb68b5858b059e0e9aea',
+    appId: '1:182050925919:web:8706b5ced94b84650e9aea',
     messagingSenderId: '182050925919',
     projectId: 'flutter-folio-demo-2',
     authDomain: 'flutter-folio-demo-2.firebaseapp.com',
     storageBucket: 'flutter-folio-demo-2.appspot.com',
-    measurementId: 'G-Z6910CXR73',
+    measurementId: 'G-NRYDTTMN3J',
   );
+
 }

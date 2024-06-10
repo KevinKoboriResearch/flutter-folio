@@ -186,7 +186,7 @@ class _AuthFormState extends State<AuthForm> with LoadingStateMixin {
                                         ),
                                       ),
                                       ContextMenuRegion(
-                                        contextMenu: const LinkContextMenu(url: "https://flutter.gskinner.com"),
+                                        contextMenu: const LinkContextMenu(url: "https://flutter.remottely.com"),
                                         child: SimpleBtn(
                                           child: AppIcon(AppIcons.github, color: theme.greyStrong, size: 24),
                                           onPressed: _handleGitPressed,
@@ -238,5 +238,5 @@ class _AuthFormState extends State<AuthForm> with LoadingStateMixin {
 
   void _handleGitPressed() => launch("https://github.com/gskinnerTeam/flutter-folio");
 
-  void _handleWebsitePressed() => launch("https://flutter.gskinner.com");
+  void _handleWebsitePressed() => launch("https://flutter.remottely.com");
 }

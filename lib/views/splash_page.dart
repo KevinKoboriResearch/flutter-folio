@@ -36,7 +36,7 @@ class _SplashPageState extends State<SplashPage> {
                       UiText(
                           span: TextSpan(children: [
                         TextSpan(text: "by", style: TextStyles.title2),
-                        TextSpan(text: " gskinner", style: TextStyles.title2.copyWith(fontWeight: FontWeight.w800))
+                        TextSpan(text: " remottely", style: TextStyles.title2.copyWith(fontWeight: FontWeight.w800))
                       ]))
                     ],
                   ),

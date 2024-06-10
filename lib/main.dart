@@ -34,7 +34,7 @@ void main() async {
     BooksModel booksModel = BooksModel();
     AppModel appModel = AppModel(booksModel, firebase);
 
-    // /// Run
+    /// Run
     runApp(MultiProvider(
       providers: [
         // Firebase

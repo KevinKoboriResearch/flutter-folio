@@ -4,22 +4,22 @@
 <img width="215" src="https://user-images.githubusercontent.com/736973/187334195-9821c031-a566-4f8e-b4e3-3158f733c6e5.png#gh-light-mode-only">
 </p>
 <br />
-<p align="center"><img src="https://flutter.gskinner.com/folio/assets/images/git_promoimage.png?" width="800px"></p>
+<p align="center"><img src="https://flutter.remottely.com/folio/assets/images/git_promoimage.png?" width="800px"></p>
 
 # Flutter Folio
 
-A demo app showcasing how Flutter can deliver a great multi-platform experience, targeting iOS, Android, MacOS, Windows, Linux, and web. Built by [gskinner](https://gskinner.com) in partnership with Google, Flutter Folio purposefully considers user expectations, input devices and idioms for each platform, ensuring it feels at home on every device.
+A demo app showcasing how Flutter can deliver a great multi-platform experience, targeting iOS, Android, MacOS, Windows, Linux, and web. Built by [remottely](https://remottely.com) in partnership with Google, Flutter Folio purposefully considers user expectations, input devices and idioms for each platform, ensuring it feels at home on every device.
 
-In addition to forking and reviewing the [MIT licensed](LICENSE.md) code available here, you can check out more information on the [Flutter Folio Showcase Website](https://flutter.gskinner.com).
+In addition to forking and reviewing the [MIT licensed](LICENSE.md) code available here, you can check out more information on the [Flutter Folio Showcase Website](https://flutter.remottely.com).
 
-### About gskinner
-We exist to build innovative digital experiences for smart clients, and we love how easy Flutter makes that experience. Don't hesitate to [stop by our site](https://gskinner.com) to learn more about what we do. We'd love to hear from you!
+### About remottely
+We exist to build innovative digital experiences for smart clients, and we love how easy Flutter makes that experience. Don't hesitate to [stop by our site](https://remottely.com) to learn more about what we do. We'd love to hear from you!
 
-<p align="center"><img src="https://flutter.gskinner.com/folio/assets/images/git_dashes.png?" width="800px"></p>
+<p align="center"><img src="https://flutter.remottely.com/folio/assets/images/git_dashes.png?" width="800px"></p>
 
 ### Demo Builds
 To preview the app you can download from the app store on your device by visiting: 
-https://flutter.gskinner.com/folio/#g-download
+https://flutter.remottely.com/folio/#g-download
 
 ### Installation
 

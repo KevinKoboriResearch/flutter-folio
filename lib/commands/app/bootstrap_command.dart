@@ -79,11 +79,11 @@ class BootstrapCommand extends commands.BaseAppCommand {
         log(e.toString());
       }
     }
-    imageCache?.maximumSizeBytes = cacheSize;
+    imageCache.maximumSizeBytes = cacheSize;
   }
 
   void _configureDesktop() {
-    // /// Polish (for Windows OS), to hide any movement of the window on startup.
+    /// Polish (for Windows OS), to hide any movement of the window on startup.
     IoUtils.instance.showWindowWhenReady();
     if (!DeviceOS.isMacOS) {
       IoUtils.instance.setTitle("Flutter Folio");
