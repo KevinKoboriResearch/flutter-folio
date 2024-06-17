@@ -23,7 +23,7 @@ class MainFlutterWindow: NSWindow {
     func initFlutterMethodChannel() {
         let controller:FlutterViewController = self.contentViewController as! FlutterViewController;
         let channel = FlutterMethodChannel(
-            name:"flutterfolio.com/io",
+            name:"flutter-folio-demo-2.web.app/io",
             binaryMessenger: controller.engine.binaryMessenger
         )
         channel.setMethodCallHandler({

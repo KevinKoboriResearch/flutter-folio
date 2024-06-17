@@ -1,1 +1,48 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"flutter-folio-demo-2","appId":"1:182050925919:android:a17b22a7781ebea50e9aea","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"flutter-folio-demo-2","appId":"1:182050925919:ios:d6492cb33ab560680e9aea","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"flutter-folio-demo-2","appId":"1:182050925919:ios:c0e72881a39825280e9aea","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"flutter-folio-demo-2","configurations":{"ios":"1:182050925919:ios:d6492cb33ab560680e9aea","macos":"1:182050925919:ios:c0e72881a39825280e9aea","web":"1:182050925919:web:1e285c4b90d1340a0e9aea","windows":"1:182050925919:web:8706b5ced94b84650e9aea"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "flutter-folio-demo-2",
+          "appId": "1:182050925919:android:a17b22a7781ebea50e9aea",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "flutter-folio-demo-2",
+          "appId": "1:182050925919:ios:d6492cb33ab560680e9aea",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "flutter-folio-demo-2",
+          "appId": "1:182050925919:ios:c0e72881a39825280e9aea",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "flutter-folio-demo-2",
+          "configurations": {
+            "ios": "1:182050925919:ios:d6492cb33ab560680e9aea",
+            "macos": "1:182050925919:ios:c0e72881a39825280e9aea",
+            "web": "1:182050925919:web:1e285c4b90d1340a0e9aea",
+            "windows": "1:182050925919:web:8706b5ced94b84650e9aea"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

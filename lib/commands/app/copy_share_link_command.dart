@@ -8,7 +8,7 @@ import 'package:share/share.dart';
 import '../../_utils/timed/cooldown.dart';
 
 class CopyShareLinkCommand extends BaseAppCommand {
-  String get baseUrl => "https://flutterfolio.com/#";
+  String get baseUrl => "https://flutter-folio-demo-2.web.app/#";
   static CoolDown mobileShareCooldown = CoolDown(const Duration(seconds: 1));
 
   Future<void> run(String bookId, {String? pageId}) async {
