@@ -80,8 +80,8 @@ class LargeBookCover extends StatelessWidget {
                       child: PrimaryBtn(
                           label: "VIEW FOLIO", icon: Icons.chevron_right, onPressed: _handleViewFolioPressed),
                     ),
-                    HSpace.sm,
-                    StyledSharedBtn(book: book),
+                    // HSpace.sm,
+                    // StyledSharedBtn(book: book),
                   ],
                 ),
                 Flexible(child: VSpace(Insets.lg + 120 + 80 * paddingScale))
